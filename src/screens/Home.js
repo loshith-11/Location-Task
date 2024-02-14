@@ -24,7 +24,6 @@ const Home = () => {
   const handleLocationPress = useCallback((coordinates) => {
     console.log('21212121',coordinates)
     setIndex(0); // Switch to the Map tab
-        // Pass the selected coordinates to the Map tab
         navigation.navigate('Home', { screen: 'Map', params: { coordinates } });
   }, []);
 
